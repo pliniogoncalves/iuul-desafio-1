@@ -1,7 +1,4 @@
-<!DOCTYPE html>
-<html lang="en">
-
- # iuul-desafio-1
+# iuul-desafio-1
   <h1>Desafio #1 <br>
     Desenvolvimento de páginas web: Criação de um Portfólio
   </h1>
