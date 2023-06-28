@@ -3,6 +3,9 @@
     Desenvolvimento de páginas web: Criação de um Portfólio
   </h1>
 
+  <h2>Link Trello:</h2><br>
+<a href="https://trello.com/b/fHrwb9vB/desafio-1-portf%C3%B3lio" target="_blank" rel="extern">Trello</a>
+
   <h2>Instruções</h2>
   <ul>
     <li>A aplicação deve ser desenvolvida individualmente/li>
@@ -60,7 +63,7 @@
               <ol start="4" type="a">
                 <li>Sugestões de informações: nome, site oficial, definição da tecnologia, 3 prós, 3
                   limitações e 6 grandes projetos que utilizam a tecnologia.</li>
-                <li>Exemplo: <a href="https://stackshare.io/html5" target="_blank" rel="noopener noreferrer">HTML5 - Reviews, Pros & Cons | Companies using HTML5
+                <li>Exemplo: <a href="https://stackshare.io/html5" target="_blank" rel="extern">HTML5 - Reviews, Pros & Cons | Companies using HTML5
                   (stackshare.io)</a> </li>
               </ol>
         </ol>
