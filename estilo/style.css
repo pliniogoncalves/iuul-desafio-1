@@ -1,0 +1,26 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Outfit&display=swap');
+
+:root{
+    --fonte1: Arial, Helvetica, sans-serif;
+    --fonte2: 'Outfit', sans-serif;
+    
+    --cor1:#1e1021;
+    --cor2:#db5b60;
+    --cor3:#23d9f8;
+    --cor4:#2f2d78;
+    --cor5:#2e43c5;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,body{
+    font-family: var(--fonte1);
+    background-color: var(--cor1);
+    min-height: 100vh;
+}
