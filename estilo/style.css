@@ -40,6 +40,15 @@ header{
     font-family: var(--fonte2);
 }
 
+header#menu{
+    position: fixed;
+}
+
+header.a.active{
+    color:var(--cor2);
+    font-weight: bold;
+}
+
 .ul-header{
     /*border: solid red;*/
     display: flex;
