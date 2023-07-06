@@ -8,24 +8,25 @@
     <link rel="stylesheet" href="estilo/style.css">
     <script src="script/menu.js" async></script>
     <script src="script/slide.js" async></script>
+    <script src="script/tecnologia.js" async></script>
     <script src="script/formulario.js" async></script>
 </head>
 <body>
     <header>
         <nav id="menu">
             <ul class="ul-header">
-                <li> <a href="#topo"> Home </a> </li>
-                <li> <a href="#sobre-mim"> Sobre Mim </a> </li>
-                <li> <a href="#formacao"> Formação Acadêmica </a> </li>
-                <li> <a href="#atuacao"> Atuação Profissional </a> </li>
-                <li> <a href="#portfolio"> Portfólio </a> </li>
-                <li> <a href="#contato"> Contato </a> </li>
+                <li> <a href="#topo" onclick="highlightMenuItem(event)"> Home </a> </li>
+                <li> <a href="#sobre-mim" onclick="highlightMenuItem(event)"> Sobre Mim </a> </li>
+                <li> <a href="#formacao" onclick="highlightMenuItem(event)"> Formação Acadêmica </a> </li>
+                <li> <a href="#atuacao" onclick="highlightMenuItem(event)"> Atuação Profissional </a> </li>
+                <li> <a href="#portfolio" onclick="highlightMenuItem(event)"> Portfólio </a> </li>
+                <li> <a href="#contato" onclick="highlightMenuItem(event)"> Contato </a> </li>
             </ul>
         </nav>
     </header>
     
     <main>
-        <a href="#topo">
+        <a href="#topo" onclick="highlightMenuItem(event)">
         <img src="imagens/foguete.png" alt="foguete" class="imagem-fixada">
         </a>
         <section id="topo">
@@ -60,7 +61,7 @@
         
         <section id="formacao">
             <h1>
-                Formação
+                Formação Acadêmica
             </h1>
             <h2> Engenharia da Computação - IFCE - 8º Semestre  </h2>
             <h2> Análise e Desenvolvimento de Sistemas - Unifor - 2º Semestre </h2>
@@ -90,13 +91,35 @@
                 Portfólio
             </h1>
             <div id="slideshow">
-                <img src="imagens/portfolio1.png" alt="Projeto Disney">
-                <img src="imagens/portfolio2.png" alt="Projeto Neve">
-                <img src="imagens/portfolio3.png" alt="Projeto Android">
+                <figure class="slide">
+                    <img src="imagens/portfolio1.png" alt="Projeto Disney">
+                    <div class="slide-details">
+                        <h3>Projeto Disney</h3>
+                        <p>Projeto para replicar utilizando <a href="#" onclick="openTechnologyPage('html')">HTML</a> e <a href="#" onclick="openTechnologyPage('css')">CSS</a> o <a href="#" onclick="openTechnologyPage('figma')">Figma</a> com o layout do Projeto Disney.</p>
+                        <a href="https://github.com/pliniogoncalves/vnw-Desafio-02" target="_blank">Ver no GitHub</a>
+                    </div>
+                </figure>
+                <figure class="slide">
+                    <img src="imagens/portfolio2.png" alt="Projeto Neve">
+                    <div class="slide-details">
+                        <h3>Projeto Inverno</h3>
+                        <p>Projeto para replicar utilizando <a href="#" onclick="openTechnologyPage('html')">HTML</a> e <a href="#" onclick="openTechnologyPage('css')">CSS</a> o <a href="#" onclick="openTechnologyPage('figma')">Figma</a> com o layout do Projeto Neve.</p>
+                        <a href="https://github.com/pliniogoncalves/vnw-Desafio-03" target="_blank">Ver no GitHub</a>
+                    </div>
+                </figure>
+                <figure class="slide">
+                    <img src="imagens/portfolio3.png" alt="Projeto Android">
+                    <div class="slide-details">
+                        <h3>Projeto Android</h3>
+                        <p>Desafio do Módulo 2 de <a href="#" onclick="openTechnologyPage('html')">HTML</a> e <a href="#" onclick="openTechnologyPage('css')">CSS</a> do curso do Gustavo Guanabara.</p>
+                        <a href="https://github.com/pliniogoncalves/html5-css3-modulo2/tree/main/Desafio" target="_blank">Ver no GitHub</a>
+                    </div>
+                </figure>
                 
                 <span class="prev">&#10094;</span>
                 <span class="next">&#10095;</span>
             </div>
+            <div id="technology-page-container"></div>
         </section>
 
         <section id="contato">
