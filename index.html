@@ -6,13 +6,15 @@
     <link rel="shortcut icon" href="imagens/favicon.ico" type="image/x-icon">
     <title>Portfólio</title>
     <link rel="stylesheet" href="estilo/style.css">
-    <script src="script/script.js" async></script>
-    <script src="script/script2.js" async></script>
+    <script src="script/menu.js" async></script>
+    <script src="script/slide.js" async></script>
+    <script src="script/formulario.js" async></script>
 </head>
 <body>
     <header>
         <nav id="menu">
             <ul class="ul-header">
+                <li> <a href="#topo"> Home </a> </li>
                 <li> <a href="#sobre-mim"> Sobre Mim </a> </li>
                 <li> <a href="#formacao"> Formação Acadêmica </a> </li>
                 <li> <a href="#atuacao"> Atuação Profissional </a> </li>
@@ -87,7 +89,6 @@
             <h1>
                 Portfólio
             </h1>
-
             <div id="slideshow">
                 <img src="imagens/portfolio1.png" alt="Projeto Disney">
                 <img src="imagens/portfolio2.png" alt="Projeto Neve">
@@ -96,16 +97,37 @@
                 <span class="prev">&#10094;</span>
                 <span class="next">&#10095;</span>
             </div>
-           
         </section>
 
         <section id="contato">
             <h1>
                 Contato
             </h1>
-            <h2>
-                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Laborum, ipsa pariatur reiciendis, voluptatem perferendis velit doloribus, porro repudiandae ex at ullam asperiores est expedita neque voluptate provident perspiciatis. Voluptates, dignissimos?
-            </h2>
+            <h2>Email: plinioricardogoncalves@gmail.com</h2>
+            <h2>WhatsApp: (85)997116684</h2>
+
+            <section id="redes-sociais">
+                <a href="https://github.com/pliniogoncalves" target="_blank"><img src="imagens/logo-github2.png" alt="GitHub"></a>
+                <a href="https://linkedin.com/in/pliniogoncalves" target="_blank"><img src="imagens/logo-linkedin.png" alt="Youtube"></a>
+            </section>
+
+            <section>
+                <h2>Entre em contato</h2>
+              
+                <form action="#" method="post">
+                  <label for="name">Nome</label>
+                  <input type="text" id="name" name="name" required>
+              
+                  <label for="email">E-mail</label>
+                  <input type="email" id="email" name="email" required>
+              
+                  <label for="message">Mensagem</label>
+                  <textarea id="message" name="message" required></textarea>
+              
+                  <input type="submit" value="Enviar">
+                </form>
+              </section>
+
         </section>
     </main>
     <footer></footer>

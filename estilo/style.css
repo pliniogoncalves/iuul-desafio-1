@@ -71,7 +71,7 @@ main{
 
 main img.imagem-fixada{
     position: fixed;
-    bottom: 0;
+    bottom: 20px;
     right: 20px;
     width: 3vw;
 }
@@ -193,8 +193,9 @@ main section#atuacao p{
 }
 
 main section#portfolio {
-    height: 80vh;
+    height: 85vh;
     width: 80vw;
+    padding: 20px;
     position: relative;
     top: 100px;
     display: flex;
@@ -205,7 +206,7 @@ main section#portfolio {
     border-radius: 10px;
     text-align: center;
     margin-top: 370px;
-    scroll-margin-top: 140px;
+    scroll-margin-top: 130px;
 }
 
 main section#portfolio h1{
@@ -233,7 +234,7 @@ div#slideshow img:first-child {
   transform: translateY(-50%);
   font-size: 24px;
   color: white;
-  background-color: rgba(0, 0, 0, 0.5);
+  background-color: var(--cor4);
   padding: 10px;
   cursor: pointer;
 }
@@ -245,17 +246,81 @@ div#slideshow img:first-child {
 #slideshow .next {
   right: 10px;
 }
- 
+  
 main section#contato {
+    height: 80vh;
+    width: 80vw;
     position: relative;
     top: 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     text-align: center;
-    margin-top: 220px;
-    scroll-margin-top: 100px;
+    margin-top: 600px;
+    margin-bottom: 600px;
+    scroll-margin-top: 150px;
 }
 
 main section#contato h1{
+    width: 60vw;
     font-size: 3.5em;
     font-weight: bold;
     color: var(--cor4);
+    background-color: rgba(255, 255, 255, 0.025);
+    border: 1px solid var(--cor5);
+    border-radius: 10px;
+}
+main section#contato h2{
+  position: relative;
+  top: 20px;
+}
+
+section#redes-sociais{
+    text-align: right;
+    position: relative;
+    top: 20px;
+}
+
+section#redes-sociais img{
+    width: 5.84vw;
+    margin: 10px;
+    border-radius: 50%;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.400);
+}
+
+section#redes-sociais img:hover{
+    border: 2px solid rgba(255, 255, 255, 0.600);
+    transform: translate(-3px, -3px);
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.600);
+    transition: transform 0.3s, border 1s;
+}
+
+section form {
+    position: relative;
+    top: 20px;
+    height: 30vh;
+}
+ 
+  label,
+  input,
+  textarea {
+    display: block;
+    margin-bottom: 10px;
+    font-size: 1.4em;
+    width: 30vw;
+    height: 5vh;
+}
+
+textarea{
+    height: 10vh;
+    width: 30vw;
+}
+  
+input[type="submit"] {
+    background-color: var(--cor4);
+    margin: 0 auto;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    cursor: pointer;
 }

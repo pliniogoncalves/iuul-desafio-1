@@ -10,7 +10,7 @@ window.addEventListener('load', function() {
     nextButton.addEventListener('click', nextSlide);
   
     function startSlideShow() {
-      slideInterval = setInterval(nextSlide, 10000); // Altere o valor para definir o novo tempo de exibição (em milissegundos)
+      slideInterval = setInterval(nextSlide, 10000);
     }
   
     function stopSlideShow() {
@@ -43,4 +43,3 @@ window.addEventListener('load', function() {
     showSlide(currentSlide);
     startSlideShow();
   });
-  
