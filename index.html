@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="estilo/style.css">
     <script src="script/menu.js" async></script>
     <script src="script/slide.js" async></script>
+    <script src="script/tecnologia.js" async></script>
     <script src="script/formulario.js" async></script>
 </head>
 <body>
@@ -90,13 +91,35 @@
                 Portfólio
             </h1>
             <div id="slideshow">
-                <img src="imagens/portfolio1.png" alt="Projeto Disney">
-                <img src="imagens/portfolio2.png" alt="Projeto Neve">
-                <img src="imagens/portfolio3.png" alt="Projeto Android">
+                <figure class="slide">
+                    <img src="imagens/portfolio1.png" alt="Projeto Disney">
+                    <div class="slide-details">
+                        <h3>Projeto Disney</h3>
+                        <p>Projeto para replicar utilizando <a href="#" onclick="openTechnologyPage('html')">HTML</a> e <a href="#" onclick="openTechnologyPage('css')">CSS</a> o <a href="#" onclick="openTechnologyPage('figma')">Figma</a> com o layout do Projeto Disney.</p>
+                        <a href="https://github.com/pliniogoncalves/vnw-Desafio-02" target="_blank">Ver no GitHub</a>
+                    </div>
+                </figure>
+                <figure class="slide">
+                    <img src="imagens/portfolio2.png" alt="Projeto Neve">
+                    <div class="slide-details">
+                        <h3>Projeto Inverno</h3>
+                        <p>Projeto para replicar utilizando <a href="#" onclick="openTechnologyPage('html')">HTML</a> e <a href="#" onclick="openTechnologyPage('css')">CSS</a> o <a href="#" onclick="openTechnologyPage('figma')">Figma</a> com o layout do Projeto Neve.</p>
+                        <a href="https://github.com/pliniogoncalves/vnw-Desafio-03" target="_blank">Ver no GitHub</a>
+                    </div>
+                </figure>
+                <figure class="slide">
+                    <img src="imagens/portfolio3.png" alt="Projeto Android">
+                    <div class="slide-details">
+                        <h3>Projeto Android</h3>
+                        <p>Desafio do Módulo 2 de <a href="#" onclick="openTechnologyPage('html')">HTML</a> e <a href="#" onclick="openTechnologyPage('css')">CSS</a> do curso do Gustavo Guanabara.</p>
+                        <a href="https://github.com/pliniogoncalves/html5-css3-modulo2/tree/main/Desafio" target="_blank">Ver no GitHub</a>
+                    </div>
+                </figure>
                 
                 <span class="prev">&#10094;</span>
                 <span class="next">&#10095;</span>
             </div>
+            <div id="technology-page-container"></div>
         </section>
 
         <section id="contato">
