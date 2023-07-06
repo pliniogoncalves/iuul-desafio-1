@@ -193,7 +193,7 @@ main section#atuacao p{
 }
 
 main section#portfolio {
-    height: 32vh;
+    height: 80vh;
     width: 80vw;
     position: relative;
     top: 100px;
@@ -204,8 +204,8 @@ main section#portfolio {
     border: 1px solid var(--cor4);
     border-radius: 10px;
     text-align: center;
-    margin-top: 360px;
-    scroll-margin-top: 300px;
+    margin-top: 370px;
+    scroll-margin-top: 140px;
 }
 
 main section#portfolio h1{
@@ -214,6 +214,38 @@ main section#portfolio h1{
     color: var(--cor4);
 }
 
+#slideshow {
+    position: relative;
+}
+  
+#slideshow img {
+    display: none;
+}
+
+div#slideshow img:first-child {
+    display: block;
+}
+ 
+#slideshow .prev,
+#slideshow .next {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 24px;
+  color: white;
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 10px;
+  cursor: pointer;
+}
+
+#slideshow .prev {
+  left: 10px;
+}
+
+#slideshow .next {
+  right: 10px;
+}
+ 
 main section#contato {
     position: relative;
     top: 100px;
