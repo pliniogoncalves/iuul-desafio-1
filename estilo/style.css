@@ -159,8 +159,7 @@ main section#formacao h1{
 }
 
 main section#atuacao {
-    height: 35vh;
-    border: solid red;
+    height: 32vh;
     position: relative;
     top: 100px;
     display: flex;
@@ -182,12 +181,31 @@ main section#atuacao h1{
     border-radius: 10px;
 }
 
+main section#atuacao h2{
+    width: 60vw;
+    font-size: 2em;
+    font-weight: bold;
+    color: white;
+}
+
+main section#atuacao p{
+    font-size: 1em;
+}
+
 main section#portfolio {
+    height: 32vh;
+    width: 80vw;
     position: relative;
     top: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    border: 1px solid var(--cor4);
+    border-radius: 10px;
     text-align: center;
-    margin-top: 220px;
-    scroll-margin-top: 100px;
+    margin-top: 360px;
+    scroll-margin-top: 300px;
 }
 
 main section#portfolio h1{
