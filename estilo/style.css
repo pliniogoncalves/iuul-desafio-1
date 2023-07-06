@@ -269,6 +269,7 @@ main section#atuacao p{
 @media only screen and (max-width: 768px) {
     main section#atuacao {
         padding: 20px;
+        margin-bottom: 40px;
     }
 
     main section#atuacao h1 {
@@ -278,7 +279,6 @@ main section#atuacao p{
     main section#atuacao h2,
     main section#atuacao p {
         max-width: 80%;
-        font-size: 1.5rem;
     }
 }
 
@@ -518,6 +518,10 @@ section#contato input[type="submit"] {
 }
 
 @media only screen and (max-width: 768px) {
+    section#portfolio{
+        margin-top: 20px;
+    }
+
     section#contato {
         padding: 20px;
     }
