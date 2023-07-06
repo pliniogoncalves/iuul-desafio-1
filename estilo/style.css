@@ -23,7 +23,6 @@ html,body{
     font-family: var(--fonte2);
     background-color: var(--cor1);
     min-height: 100vh;
-    background-size: cover;
 }
 
 header{
@@ -56,6 +55,12 @@ header nav a{
     font-size: 1.2em;
 }
 
+.ul-header li.selected {
+    background-color: rgba(255, 255, 255, 0.025);
+    border: 2px solid var(--cor5);
+    border-radius: 10px;
+  }
+
 .ul-header li:hover{
     cursor: pointer;
     transform: scale(115%);
@@ -78,17 +83,19 @@ main img.imagem-fixada{
 
 main section#topo{
     display: flex;
+    flex-wrap: wrap;
     align-items: center;
     justify-content: space-evenly;
     width: 80vw;
-    margin-top: 100px;
-    scroll-margin-top: 300px;
+    margin-top: 90px;
+    scroll-margin-top: 200px;
 }
 
 main section#topo figure img{
-    max-width: 350px;
-    border-radius: 30%;
-    height:  50.81vh;
+    max-width: 100%;
+    height: auto;
+    border-radius: 15px;
+    height:  60.81vh;
     width: 18.09vw;
 }
 
@@ -106,32 +113,34 @@ main section#topo h2.front-end{
     color: var(--cor4);
 }
 
-main section#sobre-mim{
+main section#sobre-mim {
     position: relative;
     top: 25px;
     border: 1px solid var(--cor4);
     border-radius: 10px;
     display: flex;
+    flex-wrap: wrap;
     align-items: center;
     justify-content: space-evenly;
     width: 80vw;
     margin-top: 220px;
-    scroll-margin-top: 300px;
+    scroll-margin-top: 170px;
 }
-
-main section#sobre-mim figure img{
-    max-width: 350px;
+  
+main section#sobre-mim figure img {
+    max-width: 100%;
+    height: auto;
     border-radius: 30%;
     text-align: center;
 }
-
-main section#sobre-mim h1{
+  
+main section#sobre-mim h1 {
     font-size: 3.5em;
     font-weight: bold;
     color: var(--cor4);
 }
-
-main section#sobre-mim p{
+  
+main section#sobre-mim p {
     font-size: 1em;
 }
 
