@@ -4,22 +4,132 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="imagens/favicon.ico" type="image/x-icon">
-    <title>Portifólio</title>
+    <title>Portfólio</title>
     <link rel="stylesheet" href="estilo/style.css">
+    <script src="script/menu.js" async></script>
+    <script src="script/slide.js" async></script>
+    <script src="script/formulario.js" async></script>
 </head>
 <body>
     <header>
         <nav id="menu">
             <ul class="ul-header">
+                <li> <a href="#topo"> Home </a> </li>
                 <li> <a href="#sobre-mim"> Sobre Mim </a> </li>
-                <li> <a href="#formacao"> Formação </a> </li>
-                <li> <a href="#atuacao"> Atuação </a> </li>
+                <li> <a href="#formacao"> Formação Acadêmica </a> </li>
+                <li> <a href="#atuacao"> Atuação Profissional </a> </li>
+                <li> <a href="#portfolio"> Portfólio </a> </li>
                 <li> <a href="#contato"> Contato </a> </li>
-                <li> <a href="#portfolio"> Portifólio </a> </li>
             </ul>
         </nav>
     </header>
-    <main></main>
+    
+    <main>
+        <a href="#topo">
+        <img src="imagens/foguete.png" alt="foguete" class="imagem-fixada">
+        </a>
+        <section id="topo">
+            <section>
+                
+                <h1>Plinio Gonçalves</h1>
+                <h2 class="desenvolvedor">Desenvolvedor</h2>
+                <h2 class="front-end">Front-End</h2>
+
+            </section>
+                
+            <figure>
+                <img src="imagens/plinio-ia6.jpg" alt="plinio goncalves">
+            </figure>
+
+        </section>
+
+        <section id="sobre-mim">
+            
+                <figure>
+                    <img src="imagens/profile-pic.png" alt="plinio goncalves">
+                </figure>
+
+                <section>
+                    <h1>Sobre Mim</h1>
+                    <p>
+                        Olá, sou o Plinio Gonçalves e sou Desenvolvedor Front-End em aprendizado,<br> atualmente estudando HTML, CSS, JavaScrip e Boostrap. Sou uma pessoa que <br> gosta de adquirir e compartilhar conhecimentos sendo hard skills ou soft skills, <br>atualmente estou cursando Engenharia da Computação e Análise e Desenvolvimento de Sistemas.
+                    </p>
+                </section>
+            
+        </section>  
+        
+        <section id="formacao">
+            <h1>
+                Formação
+            </h1>
+            <h2> Engenharia da Computação - IFCE - 8º Semestre  </h2>
+            <h2> Análise e Desenvolvimento de Sistemas - Unifor - 2º Semestre </h2>
+           
+        </section>
+
+        <section id="atuacao">
+            <h1>Atuação Profissional</h1>
+
+            <h2>DB Server - Dev de Projetos e Inovação</h2>
+            <p>
+                    Minhas funções englobavam desenvolver salas de realidade aumentada no
+                    metaverso utilizando Mozilla Hubs e Javascript, e atuar na prospecção de projetos
+                    que poderiam se tornar cases para a empresa.
+            </p>
+
+            <h2>VS3 Sistemas - Dev de Automação Crestron</h2>
+            <p>
+                Minhas funções englobavam o desenvolvimento e a implementação do sistema de
+                controle e automação residencial e corporativo Crestron.
+            </p>
+            
+        </section>
+
+        <section id="portfolio">
+            <h1>
+                Portfólio
+            </h1>
+            <div id="slideshow">
+                <img src="imagens/portfolio1.png" alt="Projeto Disney">
+                <img src="imagens/portfolio2.png" alt="Projeto Neve">
+                <img src="imagens/portfolio3.png" alt="Projeto Android">
+                
+                <span class="prev">&#10094;</span>
+                <span class="next">&#10095;</span>
+            </div>
+        </section>
+
+        <section id="contato">
+            <h1>
+                Contato
+            </h1>
+            <h2>Email: plinioricardogoncalves@gmail.com</h2>
+            <h2>WhatsApp: (85)997116684</h2>
+
+            <section id="redes-sociais">
+                <a href="https://github.com/pliniogoncalves" target="_blank"><img src="imagens/logo-github2.png" alt="GitHub"></a>
+                <a href="https://linkedin.com/in/pliniogoncalves" target="_blank"><img src="imagens/logo-linkedin.png" alt="Youtube"></a>
+            </section>
+
+            <section>
+                <h2>Entre em contato</h2>
+              
+                <form action="#" method="post">
+                  <label for="name">Nome</label>
+                  <input type="text" id="name" name="name" required>
+              
+                  <label for="email">E-mail</label>
+                  <input type="email" id="email" name="email" required>
+              
+                  <label for="message">Mensagem</label>
+                  <textarea id="message" name="message" required></textarea>
+              
+                  <input type="submit" value="Enviar">
+                </form>
+              </section>
+
+        </section>
+    </main>
     <footer></footer>
 </body>
 </html>
