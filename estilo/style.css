@@ -6,7 +6,7 @@
     --fonte1: Arial, Helvetica, sans-serif;
     --fonte2: 'Outfit', sans-serif;
     
-    --cor1:#1e1021;
+    --cor1:#0c070e;
     --cor2:#db5b60;
     --cor3:#23d9f8;
     --cor4:#2f2d78;
@@ -20,44 +20,41 @@
 }
 
 html,body{
-    font-family: var(--fonte1);
+    font-family: var(--fonte2);
     background-color: var(--cor1);
     min-height: 100vh;
     background-size: cover;
 }
 
-a{
-    color: white;
+header{
+    min-height: 150px;
+    font-family: var(--fonte2);
+    text-align: center;
+}
+
+header nav#menu{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: var(--cor1);
+}
+
+header nav a{
     text-decoration: none;
     font-weight: bold;
-    display: flex;
-    align-items: center;
-}
-
-
-header{
-    
-    font-family: var(--fonte2);
-}
-
-header#menu{
-    position: fixed;
-}
-
-header.a.active{
-    color:var(--cor2);
-    font-weight: bold;
+    color: white;
 }
 
 .ul-header{
-    /*border: solid red;*/
     display: flex;
     list-style: none;
     width: 100vw;
     height: 10vh;
     justify-content: space-evenly;
     align-items: center;
-    font-size: 20px;
+    font-size: 1.4em;
+
 }
 
 .ul-header li:hover{
@@ -65,4 +62,72 @@ header.a.active{
     transform: scale(115%);
 }
 
+main{
+    border: solid red;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+
+main img.imagem-fixada{
+    position: fixed;
+    bottom: 0;
+    right: 20px;
+    width: 3vw;
+}
+
+main section#topo{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 80vw;
+}
+
+main section#topo figure img{
+    max-width: 350px;
+    border-radius: 30%;
+    height:  50.81vh;
+    width: 18.09vw;
+}
+
+main section#topo h1{
+    font-size: 5em;
+    font-weight: bold;
+}
+
+main section#topo h2.desenvolvedor{
+    font-size: 3.5em;
+}
+
+main section#topo h2.front-end{
+    font-size: 3.5em;
+    color: var(--cor4);
+}
+
+main section#sobre-mim{
+    border: solid blue;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 80vw;
+}
+
+main section#sobre-mim figure img{
+    max-width: 350px;
+    border-radius: 30%;
+    height:  50.81vh;
+    width: 18.09vw;
+    text-align: center;
+}
+
+main section#sobre-mim h1{
+    font-size: 3.5em;
+    font-weight: bold;
+}
+
+main section#sobre-mim p{
+    font-size: 1em;
+}
 
