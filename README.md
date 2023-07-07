@@ -1,4 +1,35 @@
-# iuul-desafio-1
+# Meu Portfólio
+
+Este repositório contém o código-fonte do meu portfólio, onde apresento meus projetos, habilidades e experiência. É um espaço onde compartilho meu trabalho e mostro meu desenvolvimento como profissional de desenvolvimento.
+
+## Visão Geral
+
+O objetivo deste projeto é fornecer uma visão abrangente das minhas habilidades e realizações. Aqui você encontrará informações sobre minha formação acadêmica, projetos pessoais e profissionais, bem como detalhes sobre as tecnologias que utilizo.
+
+## Recursos
+
+- Apresentação dos projetos em que trabalhei, incluindo descrições, capturas de tela e links para demonstrações ao vivo.
+- Detalhes sobre minhas habilidades técnicas e conhecimentos específicos.
+- Informações sobre minha formação acadêmica, certificações e experiência profissional relevante.
+- Contato para oportunidades de colaboração, contratação ou qualquer dúvida.
+
+## Como Utilizar
+
+1. Acesse o link do [meu portfólio online](https://pliniogoncalves.github.io./portfolio/index.html) para visualizar o conteúdo completo.
+2. Explore os projetos listados e clique em cada um para obter mais detalhes.
+3. Entre em contato comigo através do [meu e-mail](plinioricardogoncalves@gmail.com) para discutir oportunidades ou solicitar mais informações.
+
+## Contribuição
+
+Sinta-se à vontade para explorar o código-fonte e fornecer feedback ou sugestões para a melhoria do meu portfólio. Caso deseje fazer alterações diretas, você pode enviar um pull request e contribuir para o projeto.
+
+## Licença
+
+Este projeto é licenciado sob a licença [MIT](LICENSE). Sinta-se à vontade para utilizar o código como base para o seu próprio portfólio.
+
+
+<details>
+<summary># iuul-desafio-1</summary>
   <h1>Desafio #1 <br>
     Desenvolvimento de páginas web: Criação de um Portfólio
   </h1>
@@ -82,3 +113,4 @@
     <li>Completude: implementação das funcionalidades/páginas descritas anteriormente.</li>
     <li>Proatividade**</li>
   </ul>
+</details>
