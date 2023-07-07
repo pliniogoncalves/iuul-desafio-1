@@ -508,7 +508,8 @@ section#contato textarea {
     font-size: 1rem;
 }
 
-section#contato input[type="submit"] {
+section#contato input[type="submit"],
+section#contato button[type="button"] {
     padding: 10px 20px;
     font-size: 1rem;
     background-color: var(--cor4);

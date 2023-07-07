@@ -32,6 +32,18 @@ document.querySelector('form').addEventListener('submit', function(event) {
   localStorage.setItem('messages', JSON.stringify(messages));
 
   var successMessage = document.createElement('p');
+  successMessage.textContent = 'Mensagem enviada';
+  successMessage.style.color = 'green';
+
+  // Remova a mensagem anterior, se existir
+  var previousSuccessMessage = document.getElementById('successMessage');
+  if (previousSuccessMessage) {
+    previousSuccessMessage.remove();
+  }
+
+  // Adicione a nova mensagem de sucesso
+  successMessage.id = 'successMessage';
+  document.querySelector('form').appendChild(successMessage);
 
   // Limpa os campos do formulário
   successMessage.textContent = 'E-mail enviado';
