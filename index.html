@@ -6,10 +6,12 @@
     <link rel="shortcut icon" href="./imagens/favicon.ico" type="image/x-icon">
     <title>Portfólio</title>
     <link rel="stylesheet" href="./estilo/style.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="./script/menu.js" async></script>
     <script src="./script/slide.js" async></script>
     <script src="./script/tecnologia.js" async></script>
     <script src="./script/enviar-mensagem.js" async></script>
+    <script src="./script/exibir-mensagem.js" async></script>
     <script src="./script/limpar-mensagem.js" async></script>
 </head>
 <body>
@@ -157,7 +159,16 @@
                   <textarea id="message" name="message" required></textarea>
               
                   <input type="submit" value="Enviar">
-                  <button id="displayMessagesButton" type="button"><a href="#">Exibir Mensagens</a></button>
+                  
+                  <button id="displayMessage" type="button" onclick="openModal()">Exibir Mensagens</button>
+                  
+                  <div id="modal" class="modal">
+                    <div class="modal-content">
+                      <span class="close" onclick="closeModal()">&times;</span>
+                      <div id="info-container"></div>
+                    </div>
+                  </div>
+
                   <button id="clearMessagesButton" type="button">Limpar Mensagens</button>
                 </form>
               </section>
