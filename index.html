@@ -3,14 +3,16 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="shortcut icon" href="imagens/favicon.ico" type="image/x-icon">
+    <link rel="shortcut icon" href="./imagens/favicon.ico" type="image/x-icon">
     <title>Portfólio</title>
-    <link rel="stylesheet" href="estilo/style.css">
-    <script src="script/menu.js" async></script>
-    <script src="script/slide.js" async></script>
-    <script src="script/tecnologia.js" async></script>
-    <script src="script/enviar-mensagem.js" async></script>
-    <script src="script/limpar-mensagem.js" async></script>
+    <link rel="stylesheet" href="./estilo/style.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="./script/menu.js" async></script>
+    <script src="./script/slide.js" async></script>
+    <script src="./script/tecnologia.js" async></script>
+    <script src="./script/enviar-mensagem.js" async></script>
+    <script src="./script/exibir-mensagem.js" async></script>
+    <script src="./script/limpar-mensagem.js" async></script>
 </head>
 <body>
     <header>
@@ -28,7 +30,7 @@
     
     <main>
         <a href="#topo" onclick="highlightMenuItem(event)">
-        <img src="imagens/foguete.png" alt="foguete" class="imagem-fixada">
+        <img src="./imagens/foguete.png" alt="foguete" class="imagem-fixada">
         </a>
         <section id="topo">
             <section>
@@ -40,7 +42,7 @@
             </section>
                 
             <figure>
-                <img src="imagens/plinio-ia6.jpg" alt="plinio goncalves">
+                <img src="./imagens/plinio-ia6.jpg" alt="plinio goncalves">
             </figure>
 
         </section>
@@ -48,7 +50,7 @@
         <section id="sobre-mim">
             
                 <figure>
-                    <img src="imagens/profile-pic.png" alt="plinio goncalves">
+                    <img src="./imagens/profile-pic.png" alt="plinio goncalves">
                 </figure>
 
                 <section>
@@ -93,7 +95,7 @@
             </h1>
             <div id="slideshow">
                 <figure class="slide">
-                    <img src="imagens/portfolio1.png" alt="Projeto Disney">
+                    <img src="./imagens/portfolio1.png" alt="Projeto Disney">
                     <div class="slide-details">
                         <h3>Projeto Disney</h3>
                         <p>Projeto para replicar utilizando <a href="#" onclick="openTechnologyPage('html')">HTML</a> e <a href="#" onclick="openTechnologyPage('css')">CSS</a> o <a href="#" onclick="openTechnologyPage('figma')">Figma</a> com o layout do Projeto Disney.</p>
@@ -101,7 +103,7 @@
                     </div>
                 </figure>
                 <figure class="slide">
-                    <img src="imagens/portfolio2.png" alt="Projeto Neve">
+                    <img src="./imagens/portfolio2.png" alt="Projeto Neve">
                     <div class="slide-details">
                         <h3>Projeto Inverno</h3>
                         <p>Projeto para replicar utilizando <a href="#" onclick="openTechnologyPage('html')">HTML</a> e <a href="#" onclick="openTechnologyPage('css')">CSS</a> o <a href="#" onclick="openTechnologyPage('figma')">Figma</a> com o layout do Projeto Neve.</p>
@@ -109,7 +111,7 @@
                     </div>
                 </figure>
                 <figure class="slide">
-                    <img src="imagens/portfolio3.png" alt="Projeto Android">
+                    <img src="./imagens/portfolio3.png" alt="Projeto Android">
                     <div class="slide-details">
                         <h3>Projeto Android</h3>
                         <p>Desafio do Módulo 2 de <a href="#" onclick="openTechnologyPage('html')">HTML</a> e <a href="#" onclick="openTechnologyPage('css')">CSS</a> do curso do Gustavo Guanabara.</p>
@@ -117,7 +119,7 @@
                     </div>
                 </figure>
                 <figure class="slide">
-                    <img src="imagens/portfolio4.png" alt="Projeto Portfolio">
+                    <img src="./imagens/portfolio4.png" alt="Projeto Portfolio">
                     <div class="slide-details">
                         <h3>Projeto Portfólio</h3>
                         <p>Projeto do meu Portfolio, atualmente utilizando apenas <a href="#" onclick="openTechnologyPage('html')">HTML</a> e <a href="#" onclick="openTechnologyPage('css')">CSS</a>, mas está em constante atualização.</p>
@@ -139,8 +141,8 @@
             <h2>WhatsApp: (85)997116684</h2>
 
             <section id="redes-sociais">
-                <a href="https://github.com/pliniogoncalves" target="_blank"><img src="imagens/logo-github2.png" alt="GitHub"></a>
-                <a href="https://linkedin.com/in/pliniogoncalves" target="_blank"><img src="imagens/logo-linkedin.png" alt="Youtube"></a>
+                <a href="https://github.com/pliniogoncalves" target="_blank"><img src="./imagens/logo-github2.png" alt="GitHub"></a>
+                <a href="https://linkedin.com/in/pliniogoncalves" target="_blank"><img src="./imagens/logo-linkedin.png" alt="Youtube"></a>
             </section>
 
             <section>
@@ -157,6 +159,16 @@
                   <textarea id="message" name="message" required></textarea>
               
                   <input type="submit" value="Enviar">
+                  
+                  <button id="displayMessage" type="button" onclick="openModal()">Exibir Mensagens</button>
+                  
+                  <div id="modal" class="modal">
+                    <div class="modal-content">
+                      <span class="close" onclick="closeModal()">&times;</span>
+                      <div id="info-container"></div>
+                    </div>
+                  </div>
+
                   <button id="clearMessagesButton" type="button">Limpar Mensagens</button>
                 </form>
               </section>
@@ -165,8 +177,8 @@
     </main>
     <footer>
         <figure class="redes-sociais">
-            <a href="https://github.com/pliniogoncalves" target="_blank"><img src="imagens/logo-github2.png" alt="linkedin"></a>
-            <a href="https://linkedin.com/in/pliniogoncalves" target="_blank"><img src="imagens/logo-linkedin.png" alt="github"></a>
+            <a href="https://github.com/pliniogoncalves" target="_blank"><img src="./imagens/logo-github2.png" alt="linkedin"></a>
+            <a href="https://linkedin.com/in/pliniogoncalves" target="_blank"><img src="./imagens/logo-linkedin.png" alt="github"></a>
         </figure>
         <p>
             &copy; 2023 Copyright - Desenvolvedor Plinio Gonçalves
